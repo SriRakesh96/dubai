@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brick & Sage Style Banner</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    /* ===== GENERAL ===== */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background-color: #000;
+      overflow-x: hidden;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 1rem 2rem;
+      transition: background 0.3s;
+    }
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+    .navbar-brand img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      font-size: 1.1rem;
+      transition: 0.3s;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #ccc !important;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .hero-section video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(65%);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.2);
+    }
+
+    /* ===== PLAY BUTTON ===== */
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+    .play-button i {
+      font-size: 80px;
+      border-radius: 50%;
+      transition: transform 0.3s ease, color 0.3s;
+      cursor: pointer;
+    }
+    .play-button i:hover {
+      transform: scale(1.1);
+      color: rgba(255,255,255,0.8);
+    }
+    .play-button p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      text-decoration: underline;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 0.8rem 1rem;
+      }
+      .navbar-brand {
+        font-size: 1.3rem;
+      }
+      .play-button i {
+        font-size: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="bi bi-list" style="font-size: 1.8rem;"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Why B&S</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Why Dubai</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Insights</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero-section">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline poster="assets/fallback.jpg">
+      <source src="assets/banner.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <!-- Play Button Overlay -->
+    
+  </section>
+
+
+
+    <style>
+    /* ===== GENERAL ===== */
+    body {
+      margin: 0;
+      font-family: "Playfair Display", serif;
+      color: #000;
+    }
+
+    /* ===== SECTION ===== */
+    .wealth-section {
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .wealth-text {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px;
+    }
+
+    .wealth-text-content {
+      max-width: 500px;
+    }
+
+    .wealth-text h1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .wealth-text em {
+      font-family: "Georgia", serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .wealth-text p {
+      margin-top: 2rem;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    /* ===== RIGHT IMAGE ===== */
+    .wealth-image {
+      background: url("assets/build.avif") center center/cover no-repeat;
+      height: 100%;
+      min-height: 100vh;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 992px) {
+      .wealth-section {
+        flex-direction: column;
+        height: auto;
+      }
+      .wealth-text {
+        padding: 40px 20px;
+        text-align: center;
+      }
+      .wealth-image {
+        height: 50vh;
+      }
+    }
+  </style>
+
+
+  <!-- ===== WEALTH UNLOCKED SECTION ===== -->
+  <section class="container-fluid wealth-section d-flex">
+    <!-- LEFT TEXT -->
+    <div class="col-lg-6 col-md-12 wealth-text">
+      <div class="wealth-text-content">
+        <h1>Wealth Unlocked!</h1>
+        <em>
+          UAE Real Estate, Decoded for Indian Investors, with clarity, market intelligence, and goal-oriented strategies
+        </em>
+
+        <p class="mt-5">
+          <span style="font-size: 1.5rem;">❝</span><br><br>
+          ➤ 92% of High-Net-Worth Individuals (HNIs) and ultra-HNIs in India are interested in international property.<br><br>
+          ➤ Dubai overtakes London as the most preferred location.<br><br>
+          <small>
+            — Luxury Outlook Survey 2025 by India Sotheby’s International Realty (ISIR)
+          </small>
+        </p>
+      </div>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="col-lg-6 col-md-12 wealth-image"></div>
+  </section>
+
+
+    <style>
+
+    .wealth-section2 {
+      padding: 80px 0;
+      border-bottom: 1px solid #222;
+    }
+    .wealth-section2 h2 {
+      font-style: italic;
+      font-size: 2rem;
+      line-height: 1.4;
+      COLOR:#CCC;
+    }
+    .wealth-section2 .right p {
+      font-family: 'Times New Roman', serif;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #ccc;
+    }
+    .divider {
+      border-left: 1px solid rgba(255,255,255,0.3);
+      height: 200px;
+      margin: 0 auto;
+    }
+    .read-more {
+      border-bottom: 1px solid #fff;
+      display: inline-block;
+      padding-bottom: 3px;
+      margin-top: 15px;
+      font-weight: 500;
+      color: #fff;
+      text-decoration: none;
+    }
+    .read-more:hover {
+      color: #f0c040;
+      border-color: #f0c040;
+    }
+    /* Marquee Section */
+    .marquee-section {
+      background-color: #444;
+      color: #fff;
+      padding: 20px 0;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    .marquee-text {
+      display: inline-block;
+      animation: marquee 20s linear infinite;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+
+
+  <!-- SECTION 1: Text Side by Side -->
+  <section class="wealth-section2 container-fluid">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- LEFT TEXT -->
+        <div class="col-md-5 mb-4 mb-md-0">
+          <h2>
+            UAE has become <br>
+            India’s second <br>
+            home for wealth.
+          </h2>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="col-md-1 d-none d-md-flex justify-content-center">
+          <div class="divider"></div>
+        </div>
+
+        <!-- RIGHT TEXT -->
+        <div class="col-md-6 right">
+          <p>
+            Did you know, Indian HNIs have been investing in Dubai for one reason: trust.
+            For many, Dubai represents a place where their investments are valued, respected,
+            and handled with integrity—making it a preferred destination for those looking
+            to grow and protect their wealth.
+          </p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: MARQUEE -->
+  <section class="marquee-section">
+    <div class="marquee-text">
+      If the world’s wealthiest Indians are already here, why should you hold back?
+    </div>
+  </section>
+
+
+<!-- WHY DUBAI WORKS SECTION -->
+<section class="why-dubai py-5 text-center text-white">
+  <div class="container">
+    <h2 class="fw-bold mb-5 display-5">Why Dubai Works for <br> Investors Like You</h2>
+    <div class="row gy-5">
+
+      <!-- 1. Tax Advantage -->
+      <div class="col-md-3">
+        <i class="bi bi-bank2 display-4 mb-3"></i>
+        <h5 class="fst-italic">Tax Advantage</h5>
+        <p class="mt-3 small">No property tax, no capital gains tax</p>
+      </div>
+
+      <!-- 2. High Rental Yield -->
+      <div class="col-md-3">
+        <i class="bi bi-graph-up-arrow display-4 mb-3"></i>
+        <h5 class="fst-italic">High Rental Yield</h5>
+        <p class="mt-3 small">Consistently 6–8%, higher than most global cities</p>
+      </div>
+
+      <!-- 3. Lifestyle & Legacy -->
+      <div class="col-md-3">
+        <i class="bi bi-house-heart display-4 mb-3"></i>
+        <h5 class="fst-italic">Lifestyle & Legacy</h5>
+        <p class="mt-3 small">World-class living for family, plus Golden Visa residency</p>
+      </div>
+
+      <!-- 4. Currency Hedge -->
+      <div class="col-md-3">
+        <i class="bi bi-cash-coin display-4 mb-3"></i>
+        <h5 class="fst-italic">Currency Hedge</h5>
+        <p class="mt-3 small">Protects against INR volatility</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<STYLE>
+    .why-dubai {
+  background-color: #000;
+}
+
+.why-dubai i {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.why-dubai i:hover {
+  color: #f0c040;
+  transform: scale(1.2);
+}
+
+
+.why-dubai p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+</STYLE>
+<!-- BOOTSTRAP ICONS CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
